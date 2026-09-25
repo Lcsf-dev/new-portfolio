@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Lucas Fernandes — desenvolvedor focado em sistemas web, soluções de negócio e arquitetura moderna.">
+    <meta name="theme-color" content="#07111f">
+    <meta property="og:title" content="Lucas Fernandes | Desenvolvedor">
+    <meta property="og:description" content="Tecnologia, sistemas web e soluções voltadas a negócios.">
+    <meta property="og:type" content="website">
+    <title>Lucas Fernandes | Desenvolvedor</title>
+    <link rel="icon" href="icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#07111f">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+        <a class="marca" href="#inicio" aria-label="Ir para o início">
+            <span class="marca-ponto" aria-hidden="true"></span>
+            Lucas Fernandes
+        </a>
+
+        <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navegacao">
+            <span></span><span></span>
+        </button>
+
+        <nav id="navegacao" class="navegacao" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#projeto">Projeto</a>
+            <a href="#tecnologias">Stack</a>
+            <a href="#certificacoes">Formação</a>
+            <a class="botao botao-pequeno" href="#contato">Contato</a>
+        </nav>
+
+        <div class="controles-cabecalho">
+            <audio id="musica-ambiente" src="audio/musica.mp3" preload="none"></audio>
+            <button id="botao-musica" class="botao-musica" type="button" aria-label="Reproduzir música ambiente" aria-pressed="false">
+                <span aria-hidden="true">♪</span><span class="texto-musica">Música</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section id="inicio" class="hero">
+            <div class="hero-conteudo revelar">
+                <p class="selo"><span></span> Aberto a oportunidades e conexões</p>
+                <h1>Construo soluções digitais <em>com propósito.</em></h1>
+                <p class="hero-descricao">
+                    Sou Lucas Fernandes, profissional de tecnologia com mais de 15 anos de experiência e desenvolvedor em evolução contínua, focado em criar sistemas organizados, rápidos e úteis para negócios reais.
+                </p>
+                <div class="hero-acoes">
+                    <a class="botao botao-primario" href="#projeto">Conhecer o Sistema LJV <span aria-hidden="true">↓</span></a>
+                    <a class="botao botao-secundario" href="Curriculo_Lucas_Fernandes.pdf" target="_blank" rel="noopener noreferrer">Ver currículo</a>
+                    <a class="botao botao-whatsapp" href="https://wa.me/5521993449434?text=Olá%20Lucas!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                </div>
+                <dl class="hero-numeros" aria-label="Resumo profissional">
+                    <div><dt>15+</dt><dd>anos em tecnologia</dd></div>
+                    <div><dt>4</dt><dd>projetos apresentados</dd></div>
+                    <div><dt>100%</dt><dd>foco em evolução</dd></div>
+                </dl>
+            </div>
+
+            <div class="hero-visual revelar" aria-label="Foto e tecnologias de Lucas Fernandes">
+                <div class="brilho brilho-azul"></div>
+                <div class="brilho brilho-verde"></div>
+                <div class="cartao-perfil">
+                    <img src="imagens/perfil.png" alt="Foto de Lucas Fernandes">
+                    <div><strong>Lucas Fernandes</strong><span>Desenvolvedor</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <div class="cabecalho-secao revelar">
+                <p class="rotulo">01 — Sobre mim</p>
+                <h2>Experiência técnica com visão prática de produto.</h2>
+            </div>
+            <div class="sobre-grade">
+                <p class="texto-destaque revelar">Minha trajetória em tecnologia começou com hardware, sistemas, suporte técnico e resolução de problemas. Essa vivência me permite enxergar a tecnologia de forma ampla: do funcionamento físico dos equipamentos à lógica por trás dos sistemas. Atualmente, curso Análise e Desenvolvimento de Sistemas e direciono essa base prática ao desenvolvimento de software.</p>
+                <div class="lista-diferenciais revelar">
+                    <article><span>01</span><div><h3>Base técnica sólida</h3><p>Mais de 15 anos trabalhando com computadores, softwares, suporte e diagnósticos.</p></div></article>
+                    <article><span>02</span><div><h3>Aprendizado contínuo</h3><p>Atualmente, curso o Tecnólogo em Análise e Desenvolvimento de Sistemas pela Estácio e o Técnico em Programador Front-End pelo SENAI. Em paralelo, desenvolvo projetos práticos e aprofundo meus conhecimentos em desenvolvimento de software.</p></div></article>
+                    <article><span>03</span><div><h3>Foco em negócio</h3><p>Interesse em sistemas que simplificam operações e resolvem problemas reais.</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto" class="secao secao-projeto revelar">
+            <div class="cabecalho-secao">
+                <p class="rotulo">02 — Projeto em destaque</p>
+                <h2>Sistema LJV</h2>
+                <p class="subtitulo">ERP e PDV serverless para a gestão comercial de pequenas e médias empresas — em produção desde maio de 2026.</p>
+            </div>
+
+            <div class="projeto-principal">
+                <div class="projeto-imagem">
+                    <img src="imagens/sistema-ljv/vendas.png" alt="Tela de vendas e PDV do Sistema LJV">
+                    <button class="botao-ver-imagem" type="button" data-imagem="imagens/sistema-ljv/vendas.png" data-titulo="Sistema LJV — PDV e vendas">Ampliar tela</button>
+                </div>
+                <div class="projeto-resumo">
+                    <span class="tag">ERP · PDV · Serverless</span>
+                    <h3>Uma operação comercial reunida em uma única plataforma.</h3>
+                    <p>O Sistema LJV integra vendas, estoque, financeiro, relatórios analíticos e controle de acessos. Está implantado e em uso real em uma loja, com suporte técnico e melhorias contínuas conduzidas por mim.</p>
+                    <a class="link-repositorio" href="https://github.com/Lcsf-dev/sistema-ljv" target="_blank" rel="noopener noreferrer">Ver repositório do Sistema LJV ↗</a>
+                    <div class="projeto-metricas">
+                        <div><strong>Cloudflare</strong><span>Workers + D1</span></div>
+                        <div><strong>TypeScript</strong><span>Ponta a ponta</span></div>
+                        <div><strong>RBAC</strong><span>Permissões granulares</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grade-case">
+                <article><span>Desafio</span><h3>Centralizar processos</h3><p>Unir vendas, estoque, financeiro e gestão operacional em uma experiência coesa.</p></article>
+                <article><span>Solução</span><h3>ERP com edge computing</h3><p>Aplicação rápida e de baixa manutenção, preparada para a rotina comercial.</p></article>
+                <article><span>Destaque</span><h3>Engenharia defensiva</h3><p>Regras críticas no back-end, auditoria, permissões por função e valores monetários em centavos.</p></article>
+            </div>
+
+            <div class="galeria">
+                <div class="galeria-cabecalho"><h3>Telas do produto</h3><p>Prévia dos principais módulos do Sistema LJV.</p></div>
+                <div class="galeria-grade">
+                    <button type="button" data-imagem="imagens/sistema-ljv/login.png" data-titulo="Login seguro"><img src="imagens/sistema-ljv/login.png" alt="Tela de login do Sistema LJV" loading="lazy"><span>Login seguro</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/vendas.png" data-titulo="PDV e vendas"><img src="imagens/sistema-ljv/vendas.png" alt="Tela de vendas do Sistema LJV" loading="lazy"><span>PDV e vendas</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/estoque.png" data-titulo="Controle de estoque"><img src="imagens/sistema-ljv/estoque.png" alt="Tela de estoque do Sistema LJV" loading="lazy"><span>Controle de estoque</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/financeiro.png" data-titulo="Módulo financeiro"><img src="imagens/sistema-ljv/financeiro.png" alt="Tela financeira do Sistema LJV" loading="lazy"><span>Módulo financeiro</span></button>
+                </div>
+            </div>
+
+            <div class="outros-projetos">
+                <div class="galeria-cabecalho"><h3>Outros projetos</h3><p>Experiências que reforçam diferentes fundamentos de desenvolvimento.</p></div>
+                <div class="grade-outros-projetos">
+                    <article class="cartao-projeto"><button type="button" class="imagem-projeto" data-imagem="imagens/projetos/sev.png" data-titulo="SEV — Sistema de Estoque e Vendas"><img src="imagens/projetos/sev.png" alt="Tela do Sistema de Estoque e Vendas" loading="lazy"><span>Ampliar imagem</span></button><div class="conteudo-cartao-projeto"><span>Desktop · VB6 · SQL Server</span><h4>SEV — Sistema de Estoque e Vendas</h4><p>PDV, serviços, estoque e caixa com transações, auditoria, permissões e 45 stored procedures.</p><a href="https://github.com/Lcsf-dev/sistema-estoque-vendas-vb6" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+                    <article class="cartao-projeto"><button type="button" class="imagem-projeto" data-imagem="imagens/projetos/pokemon-champions.png" data-titulo="Sistema de Sorteio e Gerenciamento de Torneios — Pokémon Champions"><img src="imagens/projetos/pokemon-champions.png" alt="Tela do Sistema de Sorteio e Gerenciamento de Torneios" loading="lazy"><span>Ampliar imagem</span></button><div class="conteudo-cartao-projeto"><span>Pokémon Champions · Python · Flask · SQLite</span><h4>Sistema de Sorteio e Gerenciamento de Torneios</h4><p>Projeto local com dupla eliminação, sorteio, chaves e pódio automático.</p><a href="https://github.com/Lcsf-dev/pokemon-champions" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+                    <article class="cartao-projeto"><button type="button" class="imagem-projeto" data-imagem="imagens/projetos/mini-gestor-despesas.png" data-titulo="Mini Gestor de Despesas"><img src="imagens/projetos/mini-gestor-despesas.png" alt="Tela do Mini Gestor de Despesas" loading="lazy"><span>Ampliar imagem</span></button><div class="conteudo-cartao-projeto"><span>Desktop · VB6 · SQL Server</span><h4>Mini Gestor de Despesas</h4><p>Cadastro, edição, exclusão com confirmação, filtro mensal e totalização de despesas.</p><a href="https://github.com/Lcsf-dev/mini-gestor-despesas" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="secao">
+            <div class="cabecalho-secao revelar"><p class="rotulo">03 — Tecnologias</p><h2>Stack construída em projetos e formação contínua.</h2></div>
+            <div class="grade-tecnologias revelar">
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Ícone do Java" loading="lazy"><span>Java</span><p>Fundamentos de desenvolvimento e ecossistema Spring.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Ícone do Spring Boot" loading="lazy"><span>Spring Boot</span><p>Back-end e APIs em evolução contínua.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Ícone do Python" loading="lazy"><span>Python</span><p>Linguagem aplicada em automações e sistemas web.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Ícone do Flask" loading="lazy"><span>Flask</span><p>Framework usado no Pokémon Champions.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Ícone do JavaScript" loading="lazy"><span>JavaScript</span><p>Interações e experiências web responsivas.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Ícone do TypeScript" loading="lazy"><span>TypeScript</span><p>Frontend e backend do Sistema LJV.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Ícone do HTML5" loading="lazy"><span>HTML5</span><p>Estrutura semântica para interfaces web.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Ícone do CSS3" loading="lazy"><span>CSS3</span><p>Design responsivo e acabamento visual.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-original.svg" alt="Ícone do Visual Basic" loading="lazy"><span>Visual Basic 6</span><p>Aplicações desktop e regras de negócio.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Ícone do PostgreSQL" loading="lazy"><span>PostgreSQL</span><p>Banco relacional para aplicações modernas.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="Ícone do SQL Server" loading="lazy"><span>SQL Server</span><p>Procedures, transações, modelagem e consultas.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="Ícone do SQLite" loading="lazy"><span>SQLite</span><p>Persistência local e base do Cloudflare D1.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Ícone do Git" loading="lazy"><span>Git</span><p>Versionamento de código e histórico de mudanças.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Ícone do GitHub" loading="lazy"><span>GitHub</span><p>Repositórios e publicação de projetos.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudflare/cloudflare-original.svg" alt="Ícone da Cloudflare" loading="lazy"><span>Cloudflare</span><p>Workers, D1 e Wrangler no Sistema LJV.</p></article>
+                <article><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Ícone do Microsoft Azure" loading="lazy"><span>Microsoft Azure</span><p>Plataforma de serviços em nuvem.</p></article>
+            </div>
+        </section>
+
+        <section id="certificacoes" class="secao">
+            <div class="cabecalho-secao revelar"><p class="rotulo">04 — Formação contínua</p><h2>Certificações relevantes.</h2></div>
+            <div class="certificados revelar">
+                <a href="certificates/1-algoritmos-logica-programacao-estacio.pdf" target="_blank" rel="noopener noreferrer"><span>01 · Estácio</span><h3>Algoritmos e Lógica de Programação</h3><p>30 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/2-logica-programacao-python-estacio.pdf" target="_blank" rel="noopener noreferrer"><span>02 · Estácio</span><h3>Lógica de Programação Utilizando Python</h3><p>30 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/3-programacao-front-end-estacio.pdf" target="_blank" rel="noopener noreferrer"><span>03 · Estácio</span><h3>Certificação em Linguagem de Programação Front End</h3><p>170 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/1-python-3-mundo-1-curso-em-video.pdf" target="_blank" rel="noopener noreferrer"><span>01 · Curso em Vídeo</span><h3>Python 3 — Mundo 1</h3><p>40 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/2-Python-3-mundo-2-curso-em-video.pdf" target="_blank" rel="noopener noreferrer"><span>02 · Curso em Vídeo</span><h3>Python 3 — Mundo 2</h3><p>40 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/1-Fundamentos de Programação com Java.pdf" target="_blank" rel="noopener noreferrer"><span>Hotmart · Emerson Machado</span><h3>Fundamentos de Programação com Java</h3><p>16 horas.</p><b>Ver diploma ↗</b></a>
+                <a href="certificates/2-Bootcamp NTT DATA Backend Java com Spring Al.pdf" target="_blank" rel="noopener noreferrer"><span>DIO + NTT DATA</span><h3>Bootcamp Backend Java com Spring AI</h3><p>54 horas.</p><b>Ver diploma ↗</b></a>
+            </div>
+        </section>
+
+        <section id="contato" class="secao contato revelar">
+            <p class="rotulo">05 — Contato</p>
+            <h2>Vamos construir algo relevante?</h2>
+            <p>Estou disponível para conversar sobre oportunidades, produtos e desafios de tecnologia.</p>
+            <div class="contato-acoes">
+                <a class="contato-item" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=lucas.lcsf.dev%40gmail.com&amp;su=Contato%20pelo%20portf%C3%B3lio%20de%20Lucas%20Fernandes&amp;body=Ol%C3%A1%20Lucas%2C%0A%0AVi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" aria-label="Abrir nova mensagem no Gmail para Lucas Fernandes">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm2 2v.35l7 5.25 7-5.25V7l-7 5.25L5 7Z"/></svg><span><b>E-mail</b>lucas.lcsf.dev@gmail.com</span>
+                </a>
+                <a class="contato-item contato-whatsapp" href="https://wa.me/5521993449434?text=Olá%20Lucas!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Lucas Fernandes pelo WhatsApp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.5 9.5 0 0 0-8.08 14.5L2.5 21.5l5.15-1.36A9.5 9.5 0 1 0 12 2Zm0 17.2a7.68 7.68 0 0 1-3.91-1.07l-.28-.16-3.06.81.82-2.97-.18-.3A7.7 7.7 0 1 1 12 19.2Zm4.23-5.77c-.23-.12-1.36-.67-1.57-.74-.21-.08-.36-.12-.51.12-.15.23-.59.74-.72.89-.13.15-.26.17-.49.06-1.34-.67-2.22-1.2-3.1-2.72-.23-.39.23-.36.66-1.2.08-.16.04-.3-.02-.42-.06-.11-.51-1.23-.7-1.68-.18-.44-.37-.38-.51-.39h-.43c-.15 0-.39.06-.59.3-.2.23-.77.75-.77 1.84s.79 2.13.9 2.28c.11.15 1.56 2.37 3.78 3.32.53.23.94.36 1.26.46.53.17 1.02.15 1.4.09.43-.06 1.36-.56 1.55-1.1.19-.54.19-1 .13-1.1-.06-.1-.21-.16-.44-.28Z"/></svg><span><b>WhatsApp</b>(21) 99344-9434</span>
+                </a>
+                <a class="contato-item" href="https://www.linkedin.com/in/lucasfernandes-dev/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Lucas Fernandes">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.5A1.7 1.7 0 1 1 5.2 7a1.7 1.7 0 0 1 0-3.5ZM3.7 8.3h3v12h-3v-12Zm4.9 0h2.87v1.64h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2 3.61 4.61v7.32h-3v-6.49c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.69-2.49 3.43v6.6h-3v-12Z"/></svg><span><b>LinkedIn</b>linkedin.com/in/lucasfernandes-dev</span>
+                </a>
+                <a class="contato-item" href="https://github.com/Lcsf-dev" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Lucas Fernandes">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.46-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.4-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.5c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.35 4.68-4.58 4.93.36.31.68.9.68 1.81v2.67c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span><b>GitHub</b>github.com/Lcsf-dev</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer><span>© <span id="ano-atual"></span> Lucas Fernandes.</span><span>Desenvolvido com HTML, CSS e JavaScript.</span></footer>
+
+    <dialog class="modal-imagem" aria-label="Imagem ampliada do projeto">
+        <button class="fechar-modal" type="button" aria-label="Fechar imagem">×</button>
+        <img src="" alt=""><p></p>
+    </dialog>
+</body>
+</html>
