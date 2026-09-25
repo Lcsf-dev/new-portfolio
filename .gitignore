@@ -11,3 +11,6 @@ Desktop.ini
 # Arquivos temporários e registros locais
 *.log
 *.tmp
+
+# Diretório local da Netlify
+.netlify
