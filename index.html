@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Lucas Fernandes — desenvolvedor focado em sistemas web, soluções de negócio e arquitetura moderna.">
     <meta name="theme-color" content="#07111f">
+    <script>
+        (() => {
+            let temaSalvo;
+
+            try {
+                temaSalvo = localStorage.getItem('meu-portfolio:tema');
+            } catch {
+                // Usa a preferência do sistema quando o armazenamento não está disponível.
+            }
+
+            const sistemaClaro = window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: light)').matches;
+
+            const tema = temaSalvo === 'claro' || temaSalvo === 'escuro'
+                ? temaSalvo
+                : sistemaClaro ? 'claro' : 'escuro';
+
+            document.documentElement.dataset.tema = tema;
+            document.querySelector('meta[name="theme-color"]').content =
+                tema === 'claro' ? '#f5f8fc' : '#07111f';
+        })();
+    </script>
     <meta property="og:title" content="Lucas Fernandes | Desenvolvedor">
     <meta property="og:description" content="Tecnologia, sistemas web e soluções voltadas a negócios.">
     <meta property="og:type" content="website">
@@ -45,6 +67,10 @@
             <audio id="musica-ambiente" src="audio/musica.mp3" preload="none"></audio>
             <button id="botao-musica" class="botao-musica" type="button" aria-label="Reproduzir música ambiente" aria-pressed="false">
                 <span aria-hidden="true">♪</span><span class="texto-musica">Música</span>
+            </button>
+            <button id="botao-tema" class="botao-tema" type="button"
+                    aria-label="Ativar modo claro" title="Ativar modo claro">
+                <span data-icone-tema aria-hidden="true">☀</span>
             </button>
         </div>
     </header>

@@ -8,6 +8,37 @@ const musicaAmbiente = document.querySelector('#musica-ambiente');
 const botaoMusica = document.querySelector('#botao-musica');
 const textoMusica = botaoMusica.querySelector('.texto-musica');
 
+const botaoTema = document.querySelector('#botao-tema');
+const iconeTema = botaoTema.querySelector('[data-icone-tema]');
+
+function aplicarTema(tema) {
+    const temaEscuro = tema === 'escuro';
+    const acao = temaEscuro ? 'Ativar modo claro' : 'Ativar modo escuro';
+
+    document.documentElement.dataset.tema = tema;
+    botaoTema.setAttribute('aria-label', acao);
+    botaoTema.title = acao;
+    iconeTema.textContent = temaEscuro ? '☀' : '☾';
+
+    document.querySelector('meta[name="theme-color"]').content =
+        temaEscuro ? '#07111f' : '#f5f8fc';
+}
+
+aplicarTema(document.documentElement.dataset.tema || 'escuro');
+
+botaoTema.addEventListener('click', () => {
+    const temaAtual = document.documentElement.dataset.tema;
+    const novoTema = temaAtual === 'escuro' ? 'claro' : 'escuro';
+
+    aplicarTema(novoTema);
+
+    try {
+        localStorage.setItem('meu-portfolio:tema', novoTema);
+    } catch {
+        // A troca continua funcionando durante a visita.
+    }
+});
+
 document.querySelector('#ano-atual').textContent = new Date().getFullYear();
 
 botaoMenu.addEventListener('click', () => {
