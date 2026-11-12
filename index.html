@@ -151,13 +151,23 @@
                 <article><span>Destaque</span><h3>Engenharia defensiva</h3><p>Regras críticas no back-end, auditoria, permissões por função e valores monetários em centavos.</p></article>
             </div>
 
-            <div class="galeria">
-                <div class="galeria-cabecalho"><h3>Telas do produto</h3><p>Prévia dos principais módulos do Sistema LJV.</p></div>
-                <div class="galeria-grade">
+            <div class="galeria" role="region" aria-roledescription="carrossel" aria-labelledby="titulo-galeria">
+                <div class="galeria-cabecalho">
+                    <h3 id="titulo-galeria">Telas do produto</h3>
+                    <div class="galeria-controles" hidden>
+                        <button class="galeria-anterior" type="button" aria-label="Tela anterior" aria-controls="telas-produto" disabled><span aria-hidden="true">‹</span></button>
+                        <button class="galeria-proxima" type="button" aria-label="Próxima tela" aria-controls="telas-produto"><span aria-hidden="true">›</span></button>
+                    </div>
+                    <p>Prévia dos principais módulos do Sistema LJV.</p>
+                </div>
+                <div id="telas-produto" class="galeria-grade" tabindex="0" role="group" aria-label="Telas do Sistema LJV">
                     <button type="button" data-imagem="imagens/sistema-ljv/login.png" data-titulo="Login seguro"><img src="imagens/sistema-ljv/login.png" alt="Tela de login do Sistema LJV" loading="lazy"><span>Login seguro</span></button>
                     <button type="button" data-imagem="imagens/sistema-ljv/vendas.png" data-titulo="PDV e vendas"><img src="imagens/sistema-ljv/vendas.png" alt="Tela de vendas do Sistema LJV" loading="lazy"><span>PDV e vendas</span></button>
                     <button type="button" data-imagem="imagens/sistema-ljv/estoque.png" data-titulo="Controle de estoque"><img src="imagens/sistema-ljv/estoque.png" alt="Tela de estoque do Sistema LJV" loading="lazy"><span>Controle de estoque</span></button>
                     <button type="button" data-imagem="imagens/sistema-ljv/financeiro.png" data-titulo="Módulo financeiro"><img src="imagens/sistema-ljv/financeiro.png" alt="Tela financeira do Sistema LJV" loading="lazy"><span>Módulo financeiro</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/estoque_movimento.png" data-titulo="Movimentações de estoque"><img src="imagens/sistema-ljv/estoque_movimento.png" alt="Tela de movimentações de estoque do Sistema LJV" loading="lazy"><span>Movimentações</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/relatorios.png" data-titulo="Relatórios analíticos"><img src="imagens/sistema-ljv/relatorios.png" alt="Tela de relatórios do Sistema LJV" loading="lazy"><span>Relatórios</span></button>
+                    <button type="button" data-imagem="imagens/sistema-ljv/relatorios_comparativo.png" data-titulo="Relatórios comparativos"><img src="imagens/sistema-ljv/relatorios_comparativo.png" alt="Tela de relatórios comparativos do Sistema LJV" loading="lazy"><span>Comparativo</span></button>
                 </div>
             </div>
 

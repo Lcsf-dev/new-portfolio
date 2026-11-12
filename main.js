@@ -78,6 +78,37 @@ document.querySelectorAll('.navegacao a').forEach((link) => {
     });
 });
 
+const galeria = document.querySelector('.galeria-grade');
+const controlesGaleria = document.querySelector('.galeria-controles');
+const botaoAnterior = controlesGaleria.querySelector('.galeria-anterior');
+const botaoProxima = controlesGaleria.querySelector('.galeria-proxima');
+
+function atualizarControlesGaleria() {
+    const limiteRolagem = galeria.scrollWidth - galeria.clientWidth;
+    botaoAnterior.disabled = galeria.scrollLeft <= 1;
+    botaoProxima.disabled = galeria.scrollLeft >= limiteRolagem - 1;
+}
+
+function moverGaleria(direcao) {
+    const larguraCartao = galeria.firstElementChild.getBoundingClientRect().width;
+    const espacamento = parseFloat(getComputedStyle(galeria).columnGap);
+    const passo = larguraCartao + espacamento;
+    const indiceAtual = Math.round(galeria.scrollLeft / passo);
+    const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    galeria.scrollTo({
+        left: (indiceAtual + direcao) * passo,
+        behavior: reduzirMovimento ? 'instant' : 'smooth'
+    });
+}
+
+botaoAnterior.addEventListener('click', () => moverGaleria(-1));
+botaoProxima.addEventListener('click', () => moverGaleria(1));
+galeria.addEventListener('scroll', atualizarControlesGaleria, { passive: true });
+new ResizeObserver(atualizarControlesGaleria).observe(galeria);
+controlesGaleria.hidden = false;
+atualizarControlesGaleria();
+
 document.querySelectorAll('[data-imagem]').forEach((botao) => {
     botao.addEventListener('click', () => {
         imagemModal.src = botao.dataset.imagem;
