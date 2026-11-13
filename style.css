@@ -362,7 +362,6 @@ h1 em {
 
 /* Acabamento compartilhado dos painéis: borda, fundo, sombra e desfoque. */
 .cartao-perfil,
-.cartao-flutuante,
 .projeto-resumo,
 .grade-case article,
 .certificados a {
@@ -400,30 +399,6 @@ h1 em {
 .cartao-perfil span {
     color: var(--texto-suave);
     font-size: 0.85rem;
-}
-
-/* Estilos auxiliares do cartão sobreposto à área de apresentação. */
-.cartao-flutuante {
-    position: absolute;
-    right: 0;
-    bottom: 2.5rem;
-    padding: 0.85rem 1rem;
-    border-radius: 0.75rem;
-}
-
-.cartao-flutuante span,
-.cartao-flutuante strong {
-    display: block;
-}
-
-.cartao-flutuante span {
-    color: var(--texto-suave);
-    font-size: 0.67rem;
-}
-
-.cartao-flutuante strong {
-    color: var(--verde);
-    font-size: 0.74rem;
 }
 
 /* Espaçamento vertical compartilhado entre as seções do portfólio. */
@@ -808,11 +783,6 @@ h2 {
     font-size: 0.86rem;
 }
 
-/* Configura a grade de tecnologias e o tamanho mínimo de seus cartões. */
-.grade-tecnologias {
-    grid-template-columns: repeat(3, 1fr);
-}
-
 /* Reserva altura mínima para manter consistência entre os cartões de tecnologias. */
 .grade-tecnologias article {
     min-height: 130px;
@@ -822,28 +792,12 @@ h2 {
     color: var(--verde);
 }
 
-.grade-tecnologias p {
-    margin-top: 0.7rem;
-}
-
 /* Painel final de contato com preenchimento amplo e fundo em degradê. */
 .contato {
     margin-bottom: 5rem;
     padding: 4rem;
     border-radius: 1.5rem;
     background: linear-gradient(115deg, #143a66, #0c1d32);
-}
-
-/* Aparência dos links sociais e realce de interação. */
-.link-social {
-    align-self: center;
-    color: var(--texto-suave);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.link-social:hover {
-    color: var(--texto);
 }
 
 /* Distribui os textos do rodapé e separa essa área com uma borda superior. */
@@ -1166,10 +1120,6 @@ footer {
 
     .hero-visual {
         min-height: 360px;
-    }
-
-    .cartao-flutuante {
-        right: 2%;
     }
 
     .secao-projeto,
